@@ -232,9 +232,9 @@ button:hover {
 }
 
 .card {
-    /* display: flex;
+    display: flex;
     flex-wrap: wrap;
-    flex-direction: column; */
+    flex-direction: column; 
     border:2px solid white;
     border-radius: 12px;
     height: 47vh;
