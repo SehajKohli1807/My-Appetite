@@ -1,0 +1,695 @@
+/* CSS Reset */
+
+*{
+  margin: 0;
+  padding: 0;
+  
+
+  /* color:white; */
+  color:#c59d5f;
+  overflow-x: hidden;
+  font-family: 'Baloo Paaji 2', cursive;
+
+ 
+}
+
+body{
+    height: auto;
+    background-color: black;
+    
+    
+}
+
+.displayPage::before{
+    content: "";
+    top: 0;
+    height: 75vh;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    background: url(./project2_images/main.webp);
+    background-repeat:no-repeat;
+    background-size: cover;
+    z-index: -1;
+    background-position:center;
+    opacity: 0.37;
+}
+
+.displayPage {
+    height: 75vh;
+}
+
+
+
+/* Navbar */
+/* .navbar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.4;
+} */
+
+.navbar {
+     height: 40%;
+     width: auto;
+   /* border:2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+    
+   
+    
+}
+
+.logo {
+    width: 15vw;
+    height: 50px;
+  
+   
+    font-size: 28px;
+    display: block;
+   
+    
+}
+
+
+.items ul{
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.right{
+    width: 13vw;
+}
+
+.items ul li {
+    list-style: none;
+    
+}
+
+.items ul li a{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Baloo Paaji 2', cursive;
+    text-decoration: none;
+    font-size: 1.85rem;
+    padding: 6px;
+    margin: 4px;
+    display: block;
+    cursor: pointer;
+}
+
+.items ul li a:hover{
+    font-family: 'Baloo Paaji 2', cursive;
+    flex-wrap: wrap;
+    background-color: #c59d5f;
+    font-size: 1.6srem;
+    border-radius: 10px;
+    color:black;
+    margin: 4px;
+    text-decoration: none;
+    padding: 6px;
+    display: flex;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+
+/* main */
+.home_section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    align-items: center;
+}
+
+
+.home{
+    
+    width: 100%;
+    height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex-wrap: wrap;
+   word-wrap: break-word;
+   margin: 20px 20px 20px 20px;
+
+}
+
+.displayImage {
+    width: 100%;
+    height: auto;
+ 
+    background-image: url(./project2_images/food-photography-gcfd13e565_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* button */
+
+
+button {
+    word-wrap: break-word;
+    color: black;
+    padding: 4px;
+    width: 11vw;
+    font-size: 1.3rem;
+    margin: 12px 8px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: 'Baloo Paaji 2', cursive;
+    opacity: 0.7;
+    background-color:#c59d5f;
+    
+}
+
+button:hover {
+    word-wrap: break-word;
+    color: black;
+    background-color: gray;
+    padding: 4px;
+    margin: 12px 8px;
+    width: 11vw;
+    font-size: 1.3rem;
+    border: 2px solid white;
+    border-radius: 13px;
+    cursor: pointer;
+    font-family: 'Baloo Paaji 2', cursive;
+    
+}
+
+
+/* Our Services */
+.services::before {
+    background-image: url(./project2_images/reserve.webp);
+    
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 90vh;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.37;
+    z-index: -1;
+}
+.services{
+    height: 90vh;
+    /* margin: 30px 5px 30px 5px; */
+   
+    
+    color:white;
+    
+}
+
+.heading {
+    display: block;
+    margin: 16px auto;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+
+.box{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 36px 5px 5px 19px;
+    justify-content: space-evenly;
+}
+
+.card {
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; */
+    border:2px solid white;
+    border-radius: 12px;
+    height: 47vh;
+    width: 52vh;
+    margin: 16px;
+    
+}
+
+.card span {
+ display: none;
+}
+
+.card:hover span {
+    display: contents;
+    content: "we give eat";
+    z-index: 2;
+    opacity: 1;
+}
+
+.image{
+    height: 80.6%;
+}
+
+.text {
+    height: 15%;
+}
+
+#one {
+    background-image: url(./project2_images/fd2.png);
+    background-position: center;
+}
+
+#second {
+    background-image: url(./project2_images/fc.jpg);
+    background-position: center;
+
+}
+
+#third {
+    background-image: url(./project2_images/ta.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+/* Menu */
+
+.menu::before {
+    background-image: url(./project2_images/menu2.jpg);
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 140vh;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.37;
+    z-index: -1;
+}
+.menu {
+   
+    
+    display: flex;
+    flex-direction: column;
+    
+    height: 140vh;
+    
+    
+}
+
+
+.card2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border:2px solid white;
+    border-radius: 12px;
+    height: 43vh;
+    width: 43vh;
+    margin: 16px;
+    
+}
+
+.card2:hover {
+    opacity: 0.3; 
+}
+
+
+.image2{
+    height: 80.5%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.text {
+    height: 16.2%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    overflow-y: hidden;
+    
+}
+
+#one1 {
+    background-image: url(./project2_images/pizza.jpg);
+}
+   
+
+#two2 {
+    
+     background-image: url(./project2_images/burger.jpg);
+}
+
+
+#five5{
+    background-image: url(./project2_images/mocktails.jpg);
+}
+
+#four4 {
+    background-image: url(./project2_images/salad.jpg);
+}
+
+#three3{
+    background-image: url(./project2_images/indian.jpg);
+    background-position: top;
+}
+
+#six6{
+    
+    background-image: url(./project2_images/coffee.jpg);
+}
+
+
+#seven7{
+    background-image: url(./project2_images/shakes.jpg);
+    background-position: top;
+    
+}
+
+#eight8 {
+    background-image: url(./project2_images/Dessert.jpg);
+    background-position: top;
+}
+
+
+/* Resevation Page */
+
+.reservation_page::before {
+    background-image: url(./project2_images/rt.webp);
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 180vh;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.35;
+    z-index: -1;
+}
+
+.reservation_page {
+    height: 180vh;
+   
+   
+
+}
+.coupon {
+    display: block;
+    width: 60%;
+    margin: 15px auto;
+    border:6px dashed #c59d5f;;
+    border-radius: 12px;
+    padding: 16px 4px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    flex-direction: column;
+    width: auto;
+    color: white;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 8px; 
+    margin: 24px 2px;
+}
+
+.form_input {
+    display: flex;
+    flex-direction: column; 
+} 
+
+.heading3 {
+    display: block;
+    margin: 4px auto;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    justify-content: space-around;
+}
+
+#C1 {
+    margin-top: 15px;
+}
+
+#image001 {
+    background-image: url(./project2_images/hall.jpg);
+}
+
+#image002 {
+    background-image: url(./project2_images/table.jpg);
+}
+.form_input input{
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    width: 95%;
+   
+    display: block;
+  text-align: center;
+  margin: 8px 8px;
+  padding: 4px;
+  font-size: 18px;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+.form_input2 label{
+    display: inline-block;
+}
+.btn2{
+    display: block;
+    margin: 12px auto;
+}
+
+.btn2:hover{
+    display: block;
+    margin: 12px auto;
+}
+
+.reserve{
+      width: 40vw;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      
+}
+
+.image_R {
+   
+    height: 72%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text_R{
+    width: 100%;
+    height: auto;
+    word-wrap: break-word;
+    
+    
+}
+
+
+/* CONTACT PAGE */
+
+.contactpage::before{
+    content: "";
+    
+    height: 66vh;
+    
+    width: 100%;
+    position: absolute;
+    background: url(./project2_images/contact.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    z-index: -1;
+    background-position:center;
+    opacity: 0.36;
+}
+ .contactpage {
+    height: 66vh;
+}  
+.contactbox {
+    display: flex;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:10px auto;
+}
+
+.block_center {
+    text-align: center;
+    display: block;
+    margin: 4px auto;
+}
+
+
+/* Utility classes */
+
+.h1-primary{
+  
+      font-size: 3.7rem;
+      word-wrap: break-word;
+      font-family: 'Baloo Paaji 2', cursive;
+      
+}
+
+.h2_secondary{
+   
+    font-size: 2.1rem;
+    word-wrap: break-word;
+    font-family: 'Baloo Paaji 2', cursive;
+   
+    
+}
+
+.h3_ter{
+    display: inline;
+    font-size: 1.4rem;
+    word-wrap: break-word;
+    font-family: 'Baloo Paaji 2', cursive;
+    overflow: hidden;
+    
+}
+
+.h33_ter{
+    display: inline;
+    font-size: 1.4rem;
+    word-wrap: break-word;
+    font-family: 'Baloo Paaji 2', cursive;
+   
+    
+}
+
+.center {
+    text-align: center;
+    
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: rights;
+}
+
+.image {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p1 {
+    font-size: 3.3rem;
+    word-wrap: break-word;
+    font-family: 'Baloo Paaji 2', cursive;
+    color: #c59d5f;
+}
+
+p2 {
+    margin: 1px 26px;
+    font-size: 1.8rem;
+    word-wrap: break-word;
+    font-family: 'Baloo Paaji 2', cursive;
+    color: #c59d5f;
+}
+
+.fl {
+    display: inline;
+    float: left;
+}
+
+.fr {
+    display: inline;
+    float: right;
+}
+
+.h11 {
+    font-size: 3.7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-family: 'Baloo Paaji 2', cursive;
+    animation: typewriter 4s linear infinite 20s,
+      blink 800ms steps(13) infinite normal;
+    border-right: 5px solid black;
+  }
+
+  
+  @keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 50%;
+    }
+  }
+  @keyframes blink {
+    from {
+      border-color: black;
+    }
+    to {
+      border-color: transparent;
+    }
+  }
+
+  .h22 {
+    font-size: 1.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-family: 'Baloo Paaji 2', cursive;
+    animation: typewriter 4s linear infinite 20s,
+      blink 800ms linear infinite normal;
+    border-right: 5px solid black;
+  }
+  @keyframes typewriter {
+    from {
+      width: 0%;
+      
+    }
+    to {
+      width: 100%;
+      
+    }
+  }
+  @keyframes blink {
+    from {
+      border-color:black;
+    }
+    to {
+      border-color: transparent;
+    }
+  }
+
+  footer{
+    text-align: right;
+    padding: 6px 10px;
+  }
+
+
+
+
