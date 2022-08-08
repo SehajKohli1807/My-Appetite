@@ -243,16 +243,7 @@ button:hover {
     
 }
 
-.card span {
- display: none;
-}
 
-.card:hover span {
-    display: contents;
-    content: "we give eat";
-    z-index: 2;
-    opacity: 1;
-}
 
 .image{
     height: 80.6%;
